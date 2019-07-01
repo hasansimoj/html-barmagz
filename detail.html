@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="barmagz">
+<head>
+	<meta charset="utf-8">
+	<title>Bar Magz - Minimal Bootstrap 4 Blog Magazine Template</title>
+
+	<link href="assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/styles.css" rel="stylesheet">
+</head>
+<body>
+	<Navbar></Navbar>
+
+	<div class='container wrapper-content'>
+		<div id='header' class='header w-100 text-center'>
+			<h1 class='sr-only'>Bar Magz</h1>
+			<img src='images/logo.png'>
+		</div>
+
+
+	    <div id='layout' class='row'>
+	    <div class='col-sm-12' id='content'>
+	    <div class='news-info'>
+	    	<a class='tag'>Girl Only</a>
+	    	<a class='tag'>Fashion</a>
+	  		<h2 class='post-title'>Angelina Jolie Has Found the Perfect Summer Office Uniform</h2>
+	  		
+	    	<p class='desc mb-2'>
+	  			<span class='categories'>Aprilia Nur Sifa</span> &nbsp; | &nbsp; 
+	  			<span class='date'>April 25, 2019</span>
+	  		</p>
+	  		<img src='images/paige-cody-1276949-unsplash-1200x700.jpg' class='img-post'>
+	  		<div class='post-content'>
+	  		<p class='mt-4'>sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<blockquote><p> The  most difficult thing is the decision to act, the rest is merely   tenacity. The fears are paper tigers. You can do anything you decide to   do. You can act to change and control your life; and the procedure, the   process is its own reward. </p><cite> Amelia Earhart </cite></blockquote>
+
+
+
+</div>
+<div class="form-contact">
+	    		<h2 class="page-header text-center mb-4 font-weight-bold"> Add Comment</h2>
+	    		<form action='' id='comment-form'>
+				  <div class="row">
+				    <div class="col-sm-4 mt-4 mt-sm-0">
+				      <input type="text" class="form-control" placeholder="Your Name" required>
+				    </div>
+				    <div class="col-sm-4 mt-4 mt-sm-0">
+				      <input type="email" class="form-control" placeholder="E-Mail" required="">
+				    </div>
+				    <div class="col-sm-4 mt-4 mt-sm-0">
+				      <input type="text" class="form-control" placeholder="Website">
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="col">
+				     	<textarea class="form-control mt-4" id="exampleFormControlTextarea1" rows="8" placeholder="Message" required=""></textarea>
+				    </div>
+				  </div>  
+				  <div class="row">   	
+				  		<button type="submit" class="btn btn-primary btn-lg  ml-auto mr-auto mt-4"><i class="fa fa-paper-plane"> </i> Send Message</button>
+				  </div>  
+				</form>
+	    	</div>
+		</div>
+	</div>
+	<div id='sidebar' class='col-sm-4'>
+
+	    	</div>
+	</div>
+	</div>
+
+	<Subscribe></Subscribe>
+
+	<widget-footer></widget-footer>
+
+
+	<div class='options toggled'>
+		<button id='toggle-options' class='btn rounded-0'><i class='fa fa-gear'></i></button>
+		<div class='opt-content'>
+			<h4 class='page-header'>Options</h4>
+			<hr>
+			<div class="custom-control custom-checkbox">
+			  	<input type="checkbox" class="custom-control-input" id="fix-nav-option" checked="true">
+			  	<label class="custom-control-label" for="fix-nav-option">Fixed Navbar</label>
+			</div>
+			<div class="custom-control custom-checkbox mt-2">
+			  	<input type="checkbox" class="custom-control-input" id="show-side-option">
+			  	<label class="custom-control-label" for="show-side-option">Show Sidebar</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="assets/bootstrap-4/js/bootstrap.bundle.min.js"></script>
+	<!-- angular -->
+	<script src='assets/angular/angular.min.js'></script>
+    <!-- jquery validation -->
+    <script src='assets/validate/jquery.validate.min.js'></script>
+	<!-- main js -->
+	<script src="assets/main.js"></script>
+	<script>
+        $(document).ready(function(){
+            $("#comment-form").validate();
+        })
+    </script>
+</body>
+</html>

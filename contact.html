@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html ng-app="barmagz">
+<head>
+	<meta charset="utf-8">
+	<title>Bar Magz - Minimal Bootstrap 4 Blog Magazine Template</title>
+
+	<link href="assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/styles.css" rel="stylesheet">
+</head>
+<body>
+	
+	<Navbar></Navbar>
+
+	<div class='container wrapper-content'>
+		<div id='header' class='header w-100 text-center'>
+			<h1 class='sr-only'>Bar Magz</h1>
+			<img src='images/logo.png'>
+		</div>
+		
+		
+	    <div id='layout' class='row'>
+	    	<div class='col-sm-12' id='content'>
+	    <div class='news-info bg-white p-4'>
+	    	<div class="mapouter">
+	    		<div class="gmap_canvas">
+	    			<iframe  id="gmap_canvas"  style="width: 100% ; height: 500px;" src="https://maps.google.com/maps?q=amikom%20yogyakarta&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+	    			</iframe> 
+	    		</div>
+	    		<style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}
+	    		</style>
+	    	</div>
+	    	<div class="form-contact">
+	    		<h2 class="page-header text-center mb-4 font-weight-bold mt-4"> Contact Us</h2>
+	    		<form action='' id='contact-form'>
+				  <div class="row">
+				    <div class="col-sm-4 mt-4 mt-sm-0">
+				      <input type="text" class="form-control" placeholder="Full Name" equired>
+				    </div>
+				    <div class="col-sm-4 mt-4 mt-sm-0">
+				      <input type="email" class="form-control" placeholder="E-Mail" required>
+				    </div>
+				    <div class="col-sm-4 mt-4 mt-sm-0">
+				      <input type="text" class="form-control" placeholder="Subject" required="">
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="col">
+				     	<textarea class="form-control mt-4" id="exampleFormControlTextarea1" rows="8" placeholder="Message" required=""></textarea>
+				    </div>
+				  </div>  
+				  <div class='row'>
+				  	<div class=' d-inline-block ml-auto mr-auto mt-4'>
+				  	<div class="g-recaptcha" data-sitekey="6Lc9a6sUAAAAAOwvQtPHTDvnFnY2haEdqABggIEn"></div>
+</div>
+				  </div>
+				  <div class="row">	
+				  		<button type="submit" class="btn btn-primary btn-lg  ml-auto mr-auto mt-4"><i class="fa fa-paper-plane"> </i> Send Message</button>
+				  </div>  
+				</form>
+	    	</div>
+	 	</div>
+	</div>
+
+	    	<div id='sidebar' class='col-sm-4'>
+
+	    	</div>
+	    	
+	    </div>
+	</div>
+
+	<Subscribe></Subscribe>
+
+
+	<widget-footer></widget-footer>
+
+	<div class='options toggled'>
+		<button id='toggle-options' class='btn rounded-0'><i class='fa fa-gear'></i></button>
+		<div class='opt-content'>
+			<h4 class='page-header'>Options</h4>
+			<hr>
+			<div class="custom-control custom-checkbox">
+			  	<input type="checkbox" class="custom-control-input" id="fix-nav-option" checked="true">
+			  	<label class="custom-control-label" for="fix-nav-option">Fixed Navbar</label>
+			</div>
+			<div class="custom-control custom-checkbox mt-2">
+			  	<input type="checkbox" class="custom-control-input" id="show-side-option">
+			  	<label class="custom-control-label" for="show-side-option">Show Sidebar</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="assets/bootstrap-4/js/bootstrap.bundle.min.js"></script>
+	<!-- recaptcha api -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- angular -->
+	<script src='assets/angular/angular.min.js'></script>
+    <!-- jquery validation -->
+    <script src='assets/validate/jquery.validate.min.js'></script>
+	<!-- main js -->
+	<script src="assets/main.js"></script>
+	<script>
+        $(document).ready(function(){
+            $("#contact-form").validate();
+        })
+    </script>
+</body>
+</html>

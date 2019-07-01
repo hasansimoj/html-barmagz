@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="barmagz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="assets/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <Navbar></Navbar>
+
+
+    <div id="form-sign">
+        <form action="index.html" class="form-signup" id='sign-up-form'>
+            <h3 class="mb-4 font-weight-normal" style="text-align: center"> Sign Up</h3>
+            <div class="social-login">
+                <button class="btn facebook-btn social-btn" type="button"><span><i class="fa fa-facebook"></i> Sign up with Facebook</span> </button>
+            </div>
+            <div class="social-login">
+                <button class="btn google-btn social-btn" type="button"><span><i class="fa fa-google-plus"></i> Sign up with Google+</span> </button>
+            </div>
+            
+            <p style="text-align:center">OR</p>
+
+            <input type="text" id="firstname" class="form-control" placeholder="Full name" required="" autofocus="">
+            <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus="">
+            <input type="password" id="password" class="form-control" placeholder="Password" required autofocus="">
+            <input type="password" id="cpass" class="form-control" placeholder="Repeat Password" required autofocus="">
+
+            <button class="btn btn-primary btn-block" type="submit"><i class="fa fa-user-plus"></i> Sign Up</button>
+            <a href="sign-in.html" id="cancel_signup"><i class="fa fa-angle-left"></i> Back</a>
+        </form>
+    </div>
+
+    <widget-footer></widget-footer>
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="assets/bootstrap-4/js/bootstrap.bundle.min.js"></script>
+    <!-- angular -->
+    <script src='assets/angular/angular.min.js'></script>
+    <!-- jquery validation -->
+    <script src='assets/validate/jquery.validate.min.js'></script>
+    <!-- main js -->
+    <script src="assets/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#sign-up-form").validate({
+                rules: {
+                    firstname: "required",
+                    email: "required",
+                    password:'required',
+                    cpass:{
+                        required:'true',
+                        equalTo:'#password'
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>

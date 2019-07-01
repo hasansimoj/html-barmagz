@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="barmagz">
+<head>
+	<meta charset="utf-8">
+	<title>Bar Magz - Minimal Bootstrap 4 Blog Magazine Template</title>
+
+	<link href="assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/styles.css" rel="stylesheet">
+</head>
+<body>
+	<Navbar></Navbar>
+
+	<div class='container wrapper-content'>
+		<div id='header' class='header w-100 text-center'>
+			<h1 class='sr-only'>Bar Magz</h1>
+			<img src='images/logo.png'>
+		</div>
+
+
+		<div id='layout' class='row'>
+	    	<div class='col-sm-12' id='content'>
+		<h1>404 Not Found</h1>
+		<p>Halaman yang anda minta tidak tersedia.</p>
+</div>
+
+	    	<div id='sidebar' class='col-sm-4'>
+
+	    	</div>
+	    	
+	    </div>
+	</div>
+	</div>
+
+	<Subscribe></Subscribe>
+
+	<widget-footer></widget-footer>
+
+
+
+	<div class='options toggled'>
+		<button id='toggle-options' class='btn rounded-0'><i class='fa fa-gear'></i></button>
+		<div class='opt-content'>
+			<h4 class='page-header'>Options</h4>
+			<hr>
+			<div class="custom-control custom-checkbox">
+			  	<input type="checkbox" class="custom-control-input" id="fix-nav-option" checked="true">
+			  	<label class="custom-control-label" for="fix-nav-option">Fixed Navbar</label>
+			</div>
+			<div class="custom-control custom-checkbox mt-2">
+			  	<input type="checkbox" class="custom-control-input" id="show-side-option">
+			  	<label class="custom-control-label" for="show-side-option">Show Sidebar</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="assets/bootstrap-4/js/bootstrap.bundle.min.js"></script>
+	<!-- angular -->
+	<script src='assets/angular/angular.min.js'></script>
+	<!-- main js -->
+	<script src="assets/main.js"></script></body>
+</html>
